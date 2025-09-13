@@ -79,6 +79,62 @@ autogen-mcp-agent-app
 
 ---
 
+## Requisitos y configuración necesaria
+
+Para que el programa funcione correctamente, debes tener:
+
+- **Python 3.8 o superior** (recomendado Python 3.10+)
+- **Acceso a la API de OpenAI** y una API Key válida
+- **Sistema operativo:** Mac, Linux o Windows
+
+### Archivos y configuración obligatoria
+
+1. **Entorno virtual (opcional pero recomendado):**
+   - Crea y activa un entorno virtual para aislar las dependencias.
+
+2. **Instalación de dependencias:**
+   - Ejecuta:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+3. **Archivo `.env` en la raíz del proyecto:**
+   - Debes crear un archivo llamado `.env` con el siguiente contenido (reemplaza por tu propia API Key):
+     ```
+     API_KEY=sk-...tu_api_key_de_openai...
+     MODEL_NAME=gpt-5-nano-2025-08-07
+     ```
+   - **Importante:** El archivo `.env` nunca debe subirse a GitHub. Ya está incluido en `.gitignore`.
+
+4. **Dependencias principales:**
+   - El archivo `requirements.txt` incluye todas las librerías necesarias, como:
+     - `openai`
+     - `python-dotenv`
+     - `matplotlib`
+     - `weasyprint`
+     - `jinja2`
+     - `PyPDF2`
+     - `Pillow`
+   - Instálalas con el comando anterior.
+
+5. **Estructura mínima de carpetas y archivos:**
+   - Debes tener la siguiente estructura:
+     ```
+     autogen-mcp-agent-app/
+     ├── src/
+     │   ├── main.py
+     │   └── agents/
+     │       ├── generator_agent.py
+     │       └── descriptor_agent.py
+     ├── requirements.txt
+     ├── .env
+     └── .gitignore
+     ```
+
+---
+
+**Si cumples con estos requisitos y configuraciones, el programa funcionará correctamente en cualquier equipo.**
+
 ## Uso
 
 1. **Ejecuta el programa:**
