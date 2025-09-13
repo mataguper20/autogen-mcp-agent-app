@@ -1,7 +1,5 @@
 # autogen-mcp-agent-app
 
-![Estructura del sistema](./docs/estructura_sistema.png)
-![Diagrama de secuencia](./docs/diagrama_secuencia.png)
 
 ---
 
@@ -185,13 +183,21 @@ El sistema se encargará de adaptar y mejorar el prompt para generar el informe 
 
 ---
 
-## Imágenes del sistema
+## Visualización de la arquitectura y el flujo del sistema
+
+A continuación se presentan dos diagramas que ilustran el funcionamiento interno del sistema:
 
 - **Estructura del sistema:**  
-  ![Estructura del sistema](./docs/estructura_sistema.png)
+  Este diagrama muestra los principales componentes del proyecto, la organización de los agentes y cómo interactúan entre sí y con los archivos generados.
 
 - **Diagrama de secuencia:**  
-  ![Diagrama de secuencia](./docs/diagrama_secuencia.png)
+  Este diagrama representa el flujo de mensajes y acciones entre el usuario, el orquestador, los agentes, el modelo LLM y los archivos de salida, desde que se ingresa un prompt hasta la generación y descripción de los resultados.
+
+---
+
+![Estructura del sistema](./docs/estructura_sistema.png)
+
+![Diagrama de secuencia](./docs/diagrama_secuencia.png)
 
 ---
 
